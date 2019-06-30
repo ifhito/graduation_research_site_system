@@ -1,0 +1,40 @@
+/*.container {
+	padding: 1%;
+  }*/
+  
+  .header,
+  .footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*height: 30px;*/
+	
+  }
+  
+  .content {
+    display: flex;
+
+  }
+  
+  .main {
+	flex: 0 1 1300px;
+	align-items: center;
+	justify-content: center;
+	
+  }
+  .side {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	width: 90px;
+	height: 50px;
+	font-size: 30px;
+	color: red;
+	/*color: #fff;*/
+    background:yellow;
+    margin-left: auto;
+  }
+

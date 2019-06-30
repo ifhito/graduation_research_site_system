@@ -1,0 +1,59 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+/*** basic styles ***/
+
+body { margin: 30px; } 
+h1 { font-size: 1.5em; }
+label { font-size: 24px; }
+div {	
+  width: 80%;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+/*** custom checkboxes ***/
+
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-weight: bold;
+}
+
+input[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
+input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
+
+input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
+input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
+
+input[type=submit] {
+	display: block;
+	/*display: none;*/
+	width: 70%;
+	margin: 10px;
+    font-weight: bold;
+	border: solid 3px #000000;
+	/*max-width: 320px;*/
+	text-align: center;
+	/*border: 2px solid #9ec34b;*/
+	font-size: 32px;
+	/*color: #9ec34b;*/
+	text-decoration: none;
+	/*padding: 6px 6px;*/
+	border-radius: 4px;
+	transition: .4s;
+	/*margin-left: auto;
+	margin-right: auto;*/
+
+}
+
+input[type=submit]:hover{
+	background-color: 	aqua;
+	/*border-color: #cbe585;
+	color: #FFF;*/
+}
+
+textarea {
+	width: 300px;
+	height: 10em;
+	}
